@@ -24,7 +24,7 @@ build/*
 _fonts/
 
 # Dependency directories
-node_modules/
+/node_modules/
 jspm_packages/
 
 # Coverage directory used by tools like istanbul
