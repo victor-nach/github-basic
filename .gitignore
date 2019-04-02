@@ -22,4 +22,14 @@ build/*
 
 # Exclude Fonts
 _fonts/
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# nyc test coverage
+.nyc_output
  
