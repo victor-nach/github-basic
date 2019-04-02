@@ -1,0 +1,37 @@
+{
+  "name": "github-basic",
+  "version": "1.0.0",
+  "description": "a remote repo to help with my github skills [I'm learning this on lynda.com](http://lynda.com)",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "babel-node server/app.js",
+    "start:nodemon": "nodemon --exec babel-node server/app.js",
+    "test": "nyc --reporter=text mocha server/test --require @babel/register || true",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victor-nach/github-basic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victor-nach/github-basic/issues"
+  },
+  "homepage": "https://github.com/victor-nach/github-basic#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.4.0",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.2",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.3",
+    "mocha": "^6.0.2",
+    "nodemon": "^1.18.10",
+    "nyc": "^13.3.0"
+  }
+}
